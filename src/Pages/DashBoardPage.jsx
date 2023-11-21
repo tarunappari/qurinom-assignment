@@ -37,7 +37,6 @@ const DashBoardPAge = () => {
     tempList.splice(index, 1)
     localStorage.setItem("taskList", JSON.stringify(tempList))
     setTaskList(tempList)
-    window.location.reload()
   }
 
   function updateListArray(index) {
