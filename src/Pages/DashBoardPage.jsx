@@ -35,8 +35,9 @@ const DashBoardPAge = () => {
   function deleteTask(index) {
     let tempList = taskList
     tempList.splice(index, 1)
-    localStorage.setItem("taskList", JSON.stringify(tempList))
     setTaskList(tempList)
+    localStorage.setItem("taskList", JSON.stringify(tempList))
+    
   }
 
   function updateListArray(index) {
